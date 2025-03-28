@@ -1,0 +1,86 @@
+$primary-color: #0062ffe1;
+$secondary-color: #666;
+$background-color: #e6e5f6a6;
+$font-family: Arial, sans-serif;
+
+.resume-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, rgba(64, 0, 255, 0.203), rgba(0, 255, 247, 0.268));
+}
+
+.header {
+    grid-column: span 2;
+    text-align: center;
+    background-color: $primary-color;
+    color: white;
+    padding: 20px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+}
+
+.img-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid $primary-color;
+}
+
+.img-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section {
+    padding: 15px;
+    background-color: $background-color;
+    border-left: 5px solid $primary-color;
+}
+
+.contact {
+    grid-column: span 2;
+    text-align: start;
+}
+
+h2 {
+    color: $primary-color;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+    color: $secondary-color;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
