@@ -83,7 +83,7 @@ a:hover {
 
 @media (max-width: 768px) {
   .resume-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 10px;
     padding: 10px;
   }
@@ -108,7 +108,7 @@ a:hover {
 }
 @media (max-width: 380px) {
   .resume-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding: 8px;
   }
   .header {
